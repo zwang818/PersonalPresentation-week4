@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f7f2">
+    <meta name="description" content="zwang 的前端网页作品集：Register Form、Quiz Game 和 Recipe Finder。用代码把想法变成可以体验的作品。">
+    <title>zwang — 前端网页作品集</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <a class="skip-link" href="#projects">跳到作品</a>
+    <div class="page-shell">
+        <header class="site-header">
+            <nav class="nav-pill" aria-label="主导航">
+                <a class="brand" href="#top" aria-label="zwang 首页"><span class="brand-emoji">😎</span> ZWANG</a>
+                <a class="pill-button nav-action" href="#projects">探索作品 <span aria-hidden="true">↘</span></a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" id="top" aria-labelledby="hero-title">
+                <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> CODE. CREATE. REPEAT.</div>
+                <h1 id="hero-title"><span>FRONTEND WORKS</span><span>WITH CHARACTER.</span></h1>
+                <p class="hero-intro"><strong>zwang 的前端网页作品集</strong><span class="intro-divider" aria-hidden="true"> / </span><span>把想法写进代码，把创意带到屏幕。</span></p>
+                <div class="stone-stage" aria-hidden="true">
+                    <svg class="stone-word" viewBox="0 0 1200 310" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                        <defs>
+                            <filter id="stone" x="-8%" y="-15%" width="116%" height="135%" color-interpolation-filters="sRGB">
+                                <feTurbulence type="fractalNoise" baseFrequency=".085" numOctaves="4" seed="12" result="grain"/>
+                                <feDiffuseLighting in="grain" surfaceScale="9" diffuseConstant="1.1" lighting-color="#b9b9b4" result="rock"><feDistantLight azimuth="235" elevation="45"/></feDiffuseLighting>
+                                <feComposite in="rock" in2="SourceAlpha" operator="in" result="surface"/>
+                                <feBlend in="surface" in2="SourceGraphic" mode="multiply"/>
+                            </filter>
+                        </defs>
+                        <g class="stone-type" transform="translate(28 0) rotate(-5 580 155)" fill="#242722" stroke="#242722" stroke-width="10" stroke-linejoin="round">
+                            <text x="583" y="265" text-anchor="middle" textLength="1090" lengthAdjust="spacingAndGlyphs">ZWANG</text>
+                            <text x="575" y="255" text-anchor="middle" textLength="1090" lengthAdjust="spacingAndGlyphs">ZWANG</text>
+                        </g>
+                        <g class="stone-type" transform="rotate(-5 580 155)" fill="#a4a59f" filter="url(#stone)">
+                            <text x="575" y="245" text-anchor="middle" textLength="1090" lengthAdjust="spacingAndGlyphs">ZWANG</text>
+                        </g>
+                    </svg>
+                    <div class="stage-caption"><span>IDEAS INTO INTERFACES</span><span>SCROLL TO EXPLORE ↓</span></div>
+                </div>
+            </section>
+
+            <section class="projects" id="projects" aria-labelledby="projects-title">
+                <div class="section-heading">
+                    <h2 id="projects-title"><span class="status-dot" aria-hidden="true"></span> 精选作品 <span class="project-count">(03)</span></h2>
+                    <p>三个练习，三种探索。</p>
+                </div>
+                <div class="project-grid">
+                    <a class="project-card" href="https://newform-week1.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="查看 Register Form 作品，在新标签页打开">
+                        <div class="card-topline"><span><span class="status-dot" aria-hidden="true"></span> REGISTER FORM</span><span>01 / FORM</span></div>
+                        <div class="project-preview preview-register"><img src="./img/register.png" alt="Register Form 注册表单页面预览" width="1430" height="1278"></div>
+                        <div class="card-details"><h3>Register Form</h3><p>从一个表单开始，让交互更简单。</p></div>
+                        <div class="card-bottom"><span class="project-category">注册表单</span><span class="pill-button">查看作品 <span aria-hidden="true">↗</span></span></div>
+                    </a>
+                    <a class="project-card" href="https://quiz-game-week2.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="查看 Quiz Game 作品，在新标签页打开">
+                        <div class="card-topline"><span><span class="status-dot" aria-hidden="true"></span> QUIZ GAME</span><span>02 / GAME</span></div>
+                        <div class="project-preview preview-quiz"><img src="./img/quiz.png" alt="Quiz Game 知识问答首页预览" width="1622" height="1252"></div>
+                        <div class="card-details"><h3>Quiz Game</h3><p>给好奇心一个入口，来一场知识挑战。</p></div>
+                        <div class="card-bottom"><span class="project-category">知识问答</span><span class="pill-button">查看作品 <span aria-hidden="true">↗</span></span></div>
+                    </a>
+                    <a class="project-card" href="https://recipe-finder-week3.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="查看 Recipe Finder 作品，在新标签页打开">
+                        <div class="card-topline"><span><span class="status-dot" aria-hidden="true"></span> RECIPE FINDER</span><span>03 / DISCOVER</span></div>
+                        <div class="project-preview preview-recipe"><img src="./img/recipe.png" alt="Recipe Finder 食谱搜索页面预览" width="1338" height="678"></div>
+                        <div class="card-details"><h3>Recipe Finder</h3><p>从今天的灵感，找到下一顿的美味。</p></div>
+                        <div class="card-bottom"><span class="project-category">食谱探索</span><span class="pill-button">查看作品 <span aria-hidden="true">↗</span></span></div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer"><p>持续学习，持续创造。<span class="footer-star" aria-hidden="true">✳</span></p><div><span>© 2026 ZWANG</span><a href="#top">回到顶部 ↑</a></div></footer>
+    </div>
+</body>
+</html>
